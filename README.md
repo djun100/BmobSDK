@@ -10,7 +10,7 @@ usage
         maven { url "https://jitpack.io" }
     }
 
-    compile 'com.github.djun100:BmobSDK:eab1975b2f538a5f8b9963420e4f01e291efb7ce'
+    compile 'com.github.djun100:BmobSDK:11054f373bc0357c90045c9d5bf3502e045e15f5'
 2、in application
     
 	/**
