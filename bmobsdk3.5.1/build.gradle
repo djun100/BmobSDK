@@ -16,13 +16,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
 }
 
 dependencies {
-//    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile files('libs/Bmob_Push_V0.6beta_20150408.jar')
-    compile files('libs/BmobSDK_V3.4.4_0930.jar')
-    compile files('libs/filechoose.jar')
-
-    compile 'com.squareup.okhttp:okhttp:2.5.0'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.squareup.okio:okio:1.7.0'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
 }
